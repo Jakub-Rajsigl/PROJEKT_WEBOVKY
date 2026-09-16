@@ -7,7 +7,6 @@
   <title>Můj IT Web - Hlavní stranka</title>
   <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js">
   <link rel="stylesheet" href="node_modules/bootswatch/dist/vapor/bootstrap.min.css">
 </head>
 
@@ -42,7 +41,7 @@
     <h1 class="text-center fw-bold text-light mb-4">Vítám vás na mém webu na IT projekt :D</h1>
     <p class="text-center lead fs-6">Tento web jsem vytvořil pro pana učitele Hrdinu na téma IT.</p>
 
-
+  
     <div id="mujCarousel" class="carousel slide mb-4 border border-3 border-primary" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#mujCarousel" data-bs-slide-to="0" class="active"></button>
@@ -80,76 +79,112 @@
           </div>
         </div>
       </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#mujCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#mujCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#mujCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mujCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
 
+   
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+      <div class="col">
+        <div class="card h-100 border-primary shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold"><i class="fa-solid fa-book me-2"></i>O kurzech</h5>
+            <p class="card-text">Zde se můžete přihlásit na IT kurz.</p>
+          </div>
+          <div class="card-footer bg-transparent border-primary">
+            <a href="stranka2.html" class="btn btn-outline-primary btn-sm w-100">Zjistit více</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-success shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-success fw-bold"><i class="fa-solid fa-code-branch me-2"></i>Moje Dokumentace</h5>
+            <p class="card-text">Tady mám kartu se svou dokumentací se seznamem externích knihoven.</p>
+          </div>
+          <div class="card-footer bg-transparent border-success">
+            <a href="dokumentace.pdf" target="_blank" class="btn btn-outline-success btn-sm w-100">Dokumentace</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-warning shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-warning fw-bold"><i class="fa-solid fa-headset me-2"></i>Kontakt</h5>
+            <p class="card-text">Potřebujete pomoci s projektem nebo se na něco zeptat? Můžete mě kontaktovat.</p>
+          </div>
+          <div class="card-footer bg-transparent border-warning">
+            <a href="stranka3.html" class="btn btn-outline-warning btn-sm w-100">Kontakt</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+   
     <div class="card mb-4 border-danger">
       <div class="card-header bg-danger text-white fw-bold">
         <i class="fa-solid fa-spinner me-2"></i>Hotová část
       </div>
       <div class="card-body">
-        <h5 class="card-title text-bg-info fw-bold text-center">Mám hotovo:</h5>
+        <h5 class="card-title text-bg-info fw-bold text-center mb-3">Mám hotovo:</h5>
         <div class="progress mb-2" style="height: 30px;">
           <div class="progress-bar progress-bar-striped progress-bar-animated bg-success fw-bold" style="width: 90%;">
-           90 % Mám hotovo
+            90 % Mám hotovo
           </div>
-
-          <p class="card-text text-muted">.</p>
         </div>
       </div>
-
-
-      <div class="card border-info">
-        <div class="card-header bg-info text-dark fw-bold">
-          <i class="fa-solid fa-table me-2"></i>Tabulka úkolů
-        </div>
-        <div class="card-body">
-          <table class="table table-bordered table-striped table-hover">
-            <thead class="table-dark">
-              <tr>
-                <th>ID</th>
-                <th>Název úkolu</th>
-                <th>Stav</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Nainstalovat Bootstrap</td>
-
-                <td><span class="badge bg-success">Hotovo</span></td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Vytvořit formuláře</td>
-
-                <td><span class="badge bg-success">Hotovo</span></td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Nahrát na zdenekhrdina.cz</td>
-
-                <td><span class="badge bg-danger">Čeká</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
     </div>
 
-    <footer class="bg-dark text-light text-center py-3 mt-4 border-top border-3 border-danger">
-      <p class="mb-1 fw-bold">Školní projekt 2. ročník</p>
-      <a href="dokumentace.pdf" target="_blank" class="text-warning text-decoration-none fw-bold">
-        <i class="fa-solid fa-file-pdf me-1 "></i>Odkaz na dokumentaci :)
-      </a>
-    </footer>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <div class="card border-info">
+      <div class="card-header bg-info text-dark fw-bold">
+        <i class="fa-solid fa-table me-2"></i>Tabulka úkolů
+      </div>
+      <div class="card-body">
+        <table class="table table-bordered table-striped table-hover mb-0">
+          <thead class="table-dark">
+            <tr>
+              <th>ID</th>
+              <th>Název úkolu</th>
+              <th>Stav</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Nainstalovat Bootstrap</td>
+              <td><span class="badge bg-success">Hotovo</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Vytvořit formuláře</td>
+              <td><span class="badge bg-success">Hotovo</span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Nahrát na zdenekhrdina.cz</td>
+              <td><span class="badge bg-danger">Čeká</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="bg-dark text-light text-center py-3 mt-4 border-top border-3 border-danger">
+    <p class="mb-1 fw-bold">Školní projekt 2. ročník</p>
+    <a href="dokumentace.pdf" target="_blank" class="text-warning text-decoration-none fw-bold">
+      <i class="fa-solid fa-file-pdf me-1"></i>Odkaz na dokumentaci :)
+    </a>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
